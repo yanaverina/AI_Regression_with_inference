@@ -19,18 +19,28 @@ Car dataset: EDA, ML-model and FastApi service
 3. Были построены модели линейной регрессии на вещественных и категориальных признаках, применялись различные методы регуляризации (L1, L2, L0 и Elastic). Параметры регуляризации были подобраны оптимально с помощью GridSearchCV перебором по сетке KFold. Качество моделей с различными регуляризаторами оставалось константным - +-0.6. Качество модели довольно низкое, необходимо улучшать. Потенциально для улучшения модели можно попробовать логарифмирование целевой переменной  selling_price. Также можно поанализировать исходные данные на выбросы и удалить их, поскольку они могут зашумлять предсказательную способность модели.
 
 4. Реализация сервиса FastApi
-   Пример работы с сервисом в скринкасте
+   Пример работы с сервисом в скринкасте vokoscreenNG-2024-12-03_22-39-40.mkv. Также продублировала видео в анитаск.
 
    Построили FastApi сервис с 2 запросами post:
    1) Предсказание selling_price по json, /predict_item
     Возвращается одно значение предсказания цены объекта selling price
+Пример 1
+- подаем json
+![Screenshot from 2024-12-03 22-47-38](https://github.com/user-attachments/assets/abd61baa-0365-4680-903e-40066eba4972)
 
+- получаем предсказание
+![Screenshot from 2024-12-03 22-47-47](https://github.com/user-attachments/assets/3dc68ef4-ec04-4687-883c-b6062c0e44f9)
+
+
+Пример 2
 ![Screenshot from 2024-12-03 20-11-43](https://github.com/user-attachments/assets/1ddcfe72-5cde-48b7-8d7e-54c8e500c3b1)
 ![Screenshot from 2024-12-03 20-11-51](https://github.com/user-attachments/assets/e1927015-b09c-419c-94ed-bbf3dbe2baa9)
 
-   2) Предсказание selling_price коллекции объектов, /predict_items
+   3) Предсказание selling_price коллекции объектов, /predict_items
       Принимается csv-файл, отдается также csv-файл с добавленным столбцом предсказанной цены selling price
-      
+Пример 3
+- подаем данные data_test.csv 
 ![Screenshot from 2024-12-03 20-12-18](https://github.com/user-attachments/assets/77b01f89-ac31-4f42-ba1e-88327b13a17b)
+- получаем предсказание 
 ![Screenshot from 2024-12-03 20-12-29](https://github.com/user-attachments/assets/8803742e-5348-44c4-864e-af1af44d5e6e)
       
