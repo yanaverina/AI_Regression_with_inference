@@ -26,7 +26,7 @@ Car dataset: EDA, ML-model and FastApi service
 ![Screenshot from 2024-12-03 20-11-43](https://github.com/user-attachments/assets/1ddcfe72-5cde-48b7-8d7e-54c8e500c3b1)
 ![Screenshot from 2024-12-03 20-11-51](https://github.com/user-attachments/assets/e1927015-b09c-419c-94ed-bbf3dbe2baa9)
 
-   3) Предсказание selling_price коллекции объектов, /predict_items
+   2) Предсказание selling_price коллекции объектов, /predict_items
       Принимается csv-файл, отдается также csv-файл с добавленным столбцом предсказанной цены selling price
       
 ![Screenshot from 2024-12-03 20-12-18](https://github.com/user-attachments/assets/77b01f89-ac31-4f42-ba1e-88327b13a17b)
