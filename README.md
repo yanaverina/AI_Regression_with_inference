@@ -24,6 +24,7 @@ Car dataset: EDA, ML-model and FastApi service
    Построили FastApi сервис с 2 запросами post:
    1) Предсказание selling_price по json, /predict_item
     Возвращается одно значение предсказания цены объекта selling price
+
 Пример 1
 - подаем json
 ![Screenshot from 2024-12-03 22-47-38](https://github.com/user-attachments/assets/abd61baa-0365-4680-903e-40066eba4972)
